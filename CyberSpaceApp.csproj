@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34D15A8B-E142-471A-84F7-F8E9193D70B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CyberSpaceApp</RootNamespace>
+    <AssemblyName>CyberSpaceApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI Forms\ActionCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\ActionCategory.Designer.cs">
+      <DependentUpon>ActionCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\ActionRPGCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\ActionRPGCat.Designer.cs">
+      <DependentUpon>ActionRPGCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\AdventureCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\AdventureCategory.Designer.cs">
+      <DependentUpon>AdventureCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\BattleRoyale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\BattleRoyale.Designer.cs">
+      <DependentUpon>BattleRoyale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\DataAccess.cs" />
+    <Compile Include="UI Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\Games2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\Games2.Designer.cs">
+      <DependentUpon>Games2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\Games.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\Games.Designer.cs">
+      <DependentUpon>Games.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\MMORPGCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\MMORPGCategory.Designer.cs">
+      <DependentUpon>MMORPGCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\MOBACategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\MOBACategory.Designer.cs">
+      <DependentUpon>MOBACategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Games.cs" />
+    <Compile Include="Models\SystemSpec.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\ShooterCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\ShooterCategory.Designer.cs">
+      <DependentUpon>ShooterCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\SimulationCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\SimulationCategory.Designer.cs">
+      <DependentUpon>SimulationCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\SocialDestructionCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\SocialDestructionCategory.Designer.cs">
+      <DependentUpon>SocialDestructionCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\SportsCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Forms\SportsCategory.Designer.cs">
+      <DependentUpon>SportsCategory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI Forms\ActionCategory.resx">
+      <DependentUpon>ActionCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\ActionRPGCat.resx">
+      <DependentUpon>ActionRPGCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\AdventureCategory.resx">
+      <DependentUpon>AdventureCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\BattleRoyale.resx">
+      <DependentUpon>BattleRoyale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\Games.resx">
+      <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\Games2.resx">
+      <DependentUpon>Games2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\MMORPGCategory.resx">
+      <DependentUpon>MMORPGCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\MOBACategory.resx">
+      <DependentUpon>MOBACategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI Forms\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\ShooterCategory.resx">
+      <DependentUpon>ShooterCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\SimulationCategory.resx">
+      <DependentUpon>SimulationCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\SocialDestructionCategory.resx">
+      <DependentUpon>SocialDestructionCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\SportsCategory.resx">
+      <DependentUpon>SportsCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
